@@ -5,12 +5,19 @@
   margin: 4rem auto;
   width: 20rem;
   border-radius: 50%;
-  border: 2px solid $clock-bd-color;
+  border: 2px solid $clock-color;
   display: flex;
 }
 
 .clock-text {
-  color: $clock-font-color;
+  color: $clock-color;
   font-size: 3.25rem;
   font-weight: 300;
+}
+
+.button {
+  background-color: $accent-color;
+  &:hover {
+    background-color: $dark;
+  }
 }
