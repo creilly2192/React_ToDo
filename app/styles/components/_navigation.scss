@@ -1,15 +1,17 @@
 
-a {
-  color: $font-color;
-  &:hover {
-    color: $accent-color;
-  }
-}
-
 .top-bar, .top-bar ul  {
   background-color: $white;
 }
 
 .top-bar {
   border-bottom: 1px solid #cfdbe2;
+  a {
+    color: $font-color;
+    &:hover {
+      color: $accent-color;
+    }
+    &.active {
+      color: $accent-color;
+    }
+  }
 }

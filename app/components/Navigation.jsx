@@ -8,9 +8,8 @@ var Navigation = React.createClass({
       <div className="top-bar" data-topbar role="navigation">
         <div className="top-bar-left">
           <ul className="menu">
-
-            <li><Link to="timer" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Timer</Link></li>
-            <li><Link to="countdown" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Countdown</Link></li>
+            <li><IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Timer</IndexLink></li>
+            <li><Link to="Countdown" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Countdown</Link></li>
           </ul>
         </div>
       </div>
