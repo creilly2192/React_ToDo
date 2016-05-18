@@ -7,6 +7,9 @@
     &.secondary {
       background-color: $accent-color;
     }
+    &.primary {
+      background-color: $accent-color;
+    }
   }
   .button:first-child {
     margin-right: 1.5rem;
