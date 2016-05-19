@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: $background;
+}
+
+.button {
+  background-color: #0BD69E;
+  &:hover {
+    background-color: #d60b43;
+  }
+}
+
+input[type="submit"] {
+	cursor: pointer;
+}

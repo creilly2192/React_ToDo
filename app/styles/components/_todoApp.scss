@@ -1,0 +1,28 @@
+.container {
+  width: 50%;
+  max-width: 750px;
+  margin: 3em auto 0 auto;
+  background: $white;
+	-webkit-box-shadow: 0 0 4px 3px rgba(0,0,0,.5);
+	box-shadow: 0 0 4px 4px rgba(0,0,0,.05);
+  .title-container {
+    background: #0f2033;
+    padding-bottom: 5px;
+  }
+  p.title {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 30px;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.skinny-container {
+  width: 88%;
+  margin: 0 auto;
+}
