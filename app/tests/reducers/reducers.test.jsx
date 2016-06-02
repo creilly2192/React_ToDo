@@ -36,7 +36,7 @@ describe('Reducers', () => {
       var res = reducers.todosReducer(df([]), df(action));
 
       expect(res.length).toEqual(1);
-      expect(res[0].text).Eqaul(action.text);
+      expect(res[0].text).toEqual(action.text);
     });
 
     it('should toggle todo', () => {
