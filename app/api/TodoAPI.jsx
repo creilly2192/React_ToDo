@@ -1,4 +1,5 @@
-var $ = require('jQuery');
+var $ = require('jquery');
+
 module.exports = {
   setTodos: function(todos) {
     //check if value passed is an array
