@@ -4,22 +4,21 @@ var path = require('path');
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 module.exports = {
-  //where to start processing code
   entry: [
     'script!jquery/dist/jquery.min.js',
     'script!foundation-sites/dist/foundation.min.js',
     './app/app.jsx'
   ],
   externals: {
-    jquery: 'jquery'
+    jquery: 'jQuery'
   },
   plugins: [
     new webpack.ProvidePlugin({
       '$': 'jquery',
-      'jquery': 'jquery'
+      'jQuery': 'jquery'
     }),
     new webpack.optimize.UglifyJsPlugin({
-      compress: {
+      compressor: {
         warnings: false
       }
     })
@@ -42,7 +41,6 @@ module.exports = {
       reducers: 'app/reducers/reducers.jsx',
       configureStore: 'app/store/configureStore.jsx'
     },
-    //file extensions to process
     extensions: ['', '.js', '.jsx']
   },
   module: {
@@ -55,6 +53,11 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/
       }
+    ]
+  },
+  sassLoader: {
+    includePaths: [
+      path.resolve(__dirname, './node_modules/foundation-sites/scss')
     ]
   },
   devtool: process.env.NODE_ENV === 'production' ? undefined : 'cheap-module-eval-source-map'
