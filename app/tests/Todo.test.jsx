@@ -4,6 +4,8 @@ var TestUtils = require('react-addons-test-utils');
 var expect = require('expect');
 var $ = require('jquery');
 
+import * as actions from 'actions';
+import {Todo} from 'Todo';
 var {Todo} = require('Todo');
 
 describe('Todo', () => {
@@ -17,6 +19,8 @@ describe('Todo', () => {
       text: 'Write todo.test.jsx test',
       completed: true
     };
+    var actions = actions.startToggleTodo(todoData.id, !todoData.completed)
+
     var spy = expect.createSpy();
     var todo = TestUtils.renderIntoDocument(<Todo {...todoData} dispatch={spy}/>);
 
