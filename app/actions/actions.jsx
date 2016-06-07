@@ -90,4 +90,4 @@ export var startToggleTodo = (id, completed) => {
       dispatch(updateTodo(id, updates));
     });
   };
-};
+}
