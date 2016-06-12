@@ -1,7 +1,7 @@
 .container {
   width: 50%;
   max-width: 750px;
-  margin: 3em auto 0 auto;
+  margin: 6em auto 0 auto;
   background: $white;
 	-webkit-box-shadow: 0 0 4px 3px rgba(0,0,0,.5);
 	box-shadow: 0 0 4px 4px rgba(0,0,0,.05);
@@ -25,4 +25,10 @@
 .skinny-container {
   width: 88%;
   margin: 0 auto;
+}
+
+.page-options {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 2rem 0;
 }

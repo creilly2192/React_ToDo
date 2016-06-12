@@ -13,5 +13,6 @@ import firebase from 'firebase';
   }
 
 
+  export var githubProvider = new firebase.auth.GithubAuthProvider();
   export var firebaseRef = firebase.database().ref();
   export default firebase;
